@@ -29,6 +29,12 @@ This repository holds the write-up, and the protocols, code and results of every
 Each folder has a `PROTOKOL.md`, written before its main run, with a "Sapmalar" (deviations) section at the end, and
 a `README.md` with the results. These are in Turkish; the write-up in `docs/` is in English and Turkish.
 
+## Checkpoints
+
+The trained BCSDM vector fields (four networks, about 14 MB each) are in
+[`panda_learned/models/`](panda_learned/models/), with a README on their contents and how to load them. They are the
+only trained networks of the study; no world model was trained.
+
 ## Running
 
 The PyBullet experiments use Python 3.11 with `numpy`, `scipy` and `pybullet` (we used conda-forge pybullet 3.25).
