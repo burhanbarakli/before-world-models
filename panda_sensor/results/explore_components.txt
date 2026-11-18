@@ -1,0 +1,6 @@
+S1, model 0, pilot seeds 930-934, e > 0 (exploratory). DOKUN t 7.72
+   M2R full        : t 9.44  S 0.927  D2 +1.714  (c = 2 only: t 11.03)
+   M2R no bias     : t 9.21  S 0.942  D2 +1.487  (c = 2 only: t 10.65)
+   M2R no noise    : t 9.48  S 0.927  D2 +1.754  (c = 2 only: t 11.06)
+   M2R no geometry : t 9.46  S 0.920  D2 +1.734  (c = 2 only: t 11.07)
+   M2R bias only   : t 9.46  S 0.924  D2 +1.740  (c = 2 only: t 11.04)

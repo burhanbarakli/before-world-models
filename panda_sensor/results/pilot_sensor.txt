@@ -1,0 +1,49 @@
+P1 regression S0 vs panda_rival, 36 cells of 10 runs: mean diff -0.002 s, worst |cell diff| 0.038 s -> pass
+P3 false trigger rate at e = 0, S0 (F_t 5 N): 0.000; limit S0 + 0.02 = 0.020 (Sapma 1)
+   S1: F_t 5: 0.000  F_t 10: 0.000  F_t 15: 0.000 -> F_t 5 N
+   S2: F_t 5: 0.000  F_t 10: 0.000  F_t 15: 0.000 -> F_t 5 N
+   S3: F_t 5: 0.000  F_t 10: 0.000  F_t 15: 0.000 -> F_t 5 N
+P4 S1 c = 5 mm: 75 of 100 with a measurement: d = 11.44 mm + -0.396 |r|, R2 0.36, median error 0.96 mm -> fixed step c
+   P2 first measurement: | |r-hat| - |r| | median 1.66 / 90% 4.13 mm; direction error median 16.2 / 90% 35.1 deg
+P4 S1 c = 2 mm: 100 of 100 with a measurement: d = 10.85 mm + -0.569 |r|, R2 0.38, median error 1.31 mm -> fixed step c
+   P2 first measurement: | |r-hat| - |r| | median 1.65 / 90% 4.19 mm; direction error median 21.8 / 90% 50.3 deg
+P4 S2 c = 5 mm: 75 of 100 with a measurement: d = 8.33 mm + -0.018 |r|, R2 0.01, median error 1.89 mm -> fixed step c
+   P2 first measurement: | |r-hat| - |r| | median 11.13 / 90% 22.26 mm; direction error median 52.9 / 90% 98.0 deg
+P4 S2 c = 2 mm: 100 of 100 with a measurement: d = 7.41 mm + -0.023 |r|, R2 0.01, median error 1.99 mm -> fixed step c
+   P2 first measurement: | |r-hat| - |r| | median 11.88 / 90% 22.89 mm; direction error median 59.8 / 90% 112.3 deg
+P4 S3 c = 5 mm: 75 of 100 with a measurement: d = 8.09 mm + -0.001 |r|, R2 0.00, median error 1.98 mm -> fixed step c
+   P2 first measurement: | |r-hat| - |r| | median 61.16 / 90% 102.45 mm; direction error median 77.3 / 90% 138.9 deg
+P4 S3 c = 2 mm: 100 of 100 with a measurement: d = 7.09 mm + -0.001 |r|, R2 0.00, median error 2.00 mm -> fixed step c
+   P2 first measurement: | |r-hat| - |r| | median 60.72 / 90% 102.16 mm; direction error median 82.1 / 90% 138.9 deg
+   S1 n_w  5, R_MIN 1 mm: t 9.4354  SR 0.920
+   S1 n_w  5, R_MIN 2 mm: t 9.4864  SR 0.913
+   S1 n_w  5, R_MIN 4 mm: t 9.5365  SR 0.911
+   S1 n_w 10, R_MIN 1 mm: t 9.5341  SR 0.918
+   S1 n_w 10, R_MIN 2 mm: t 9.5264  SR 0.918
+   S1 n_w 10, R_MIN 4 mm: t 9.6538  SR 0.907
+   S1 n_w 20, R_MIN 1 mm: t 9.6161  SR 0.913
+   S1 n_w 20, R_MIN 2 mm: t 9.6352  SR 0.913
+   S1 n_w 20, R_MIN 4 mm: t 9.7479  SR 0.891
+P5 S1 chosen: n_w 5, R_MIN 1 mm
+   S2 n_w  5, R_MIN 1 mm: t 10.9625  SR 0.782
+   S2 n_w  5, R_MIN 2 mm: t 10.9411  SR 0.787
+   S2 n_w  5, R_MIN 4 mm: t 10.9082  SR 0.791
+   S2 n_w 10, R_MIN 1 mm: t 11.0482  SR 0.773
+   S2 n_w 10, R_MIN 2 mm: t 11.0286  SR 0.780
+   S2 n_w 10, R_MIN 4 mm: t 10.9989  SR 0.778
+   S2 n_w 20, R_MIN 1 mm: t 11.1740  SR 0.751
+   S2 n_w 20, R_MIN 2 mm: t 11.1584  SR 0.749
+   S2 n_w 20, R_MIN 4 mm: t 11.1612  SR 0.749
+P5 S2 chosen: n_w 5, R_MIN 4 mm
+   S3 n_w  5, R_MIN 1 mm: t 11.8951  SR 0.680
+   S3 n_w  5, R_MIN 2 mm: t 11.8614  SR 0.691
+   S3 n_w  5, R_MIN 4 mm: t 11.9165  SR 0.684
+   S3 n_w 10, R_MIN 1 mm: t 11.9552  SR 0.671
+   S3 n_w 10, R_MIN 2 mm: t 11.9853  SR 0.671
+   S3 n_w 10, R_MIN 4 mm: t 11.9720  SR 0.673
+   S3 n_w 20, R_MIN 1 mm: t 12.1906  SR 0.620
+   S3 n_w 20, R_MIN 2 mm: t 12.1873  SR 0.618
+   S3 n_w 20, R_MIN 4 mm: t 12.1971  SR 0.611
+P5 S3 chosen: n_w 5, R_MIN 2 mm
+P6 time: 5.36 s per run, about 8.0 h on 9 processes -> pass
+chosen: FT {'S1': 5.0, 'S2': 5.0, 'S3': 5.0}, CAL {'S1': {0.005: None, 0.002: None}, 'S2': {0.005: None, 0.002: None}, 'S3': {0.005: None, 0.002: None}}, NW {'S1': 5, 'S2': 5, 'S3': 5}, RMIN {'S1': 0.001, 'S2': 0.004, 'S3': 0.002}

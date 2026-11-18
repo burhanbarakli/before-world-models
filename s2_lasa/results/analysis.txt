@@ -1,0 +1,95 @@
+Median over 26 shapes. Unit: rad unless stated.
+
+[main / dtw] headroom 0.252  global eta 0.5
+   F_letter  median 0.0876  mean 0.0923
+   A         median 0.0940  mean 0.1003
+   P         median 0.0871  mean 0.0889
+   F_global  median 0.0960  mean 0.0975
+   F_oracle  median 0.0876  mean 0.0900
+   gain vs F_letter: {'A': -0.0535, 'P': 0.0, 'F_oracle': 0.0, 'F_global': -0.0378}
+   shapes better: {'A': 6, 'P': 10} of 26   Holm p: {'A': np.float64(0.99839), 'P': np.float64(0.01206)}
+   A: gain -0.053, 95% bootstrap CI of the median [-0.138, -0.003]
+   P: gain 0.000, 95% bootstrap CI of the median [0.000, 0.010]
+   tuned fixed eta histogram: {0.25: 12, 0.5: 5, 1: 4, 2: 2, 3: 1, 20: 1, 30: 1}
+
+[main / fre] headroom 0.229  global eta 1
+   F_letter  median 0.1778  mean 0.1910
+   A         median 0.1884  mean 0.2025
+   P         median 0.1713  mean 0.1889
+   F_global  median 0.2035  mean 0.2009
+   F_oracle  median 0.1778  mean 0.1840
+   gain vs F_letter: {'A': -0.0156, 'P': 0.0, 'F_oracle': 0.0, 'F_global': -0.0446}
+   shapes better: {'A': 7, 'P': 8} of 26   Holm p: {'A': np.float64(0.99786), 'P': np.float64(0.49552)}
+   A: gain -0.016, 95% bootstrap CI of the median [-0.119, -0.000]
+   P: gain 0.000, 95% bootstrap CI of the median [0.000, 0.000]
+   tuned fixed eta histogram: {0.25: 11, 0.5: 2, 1: 4, 2: 1, 3: 2, 5: 2, 12: 1, 20: 1, 30: 2}
+
+[rot / dtw] headroom 0.364  global eta 1
+   F_letter  median 0.0579  mean 0.0591
+   A         median 0.0558  mean 0.0586
+   P         median 0.0554  mean 0.0582
+   F_global  median 0.0542  mean 0.0571
+   F_oracle  median 0.0485  mean 0.0517
+   gain vs F_letter: {'A': -0.0005, 'P': 0.0024, 'F_oracle': 0.0196, 'F_global': 0.0}
+   shapes better: {'A': 13, 'P': 14} of 26   Holm p: {'A': np.float64(0.44046), 'P': np.float64(0.11654)}
+   A: gain -0.001, 95% bootstrap CI of the median [-0.041, 0.041]
+   P: gain 0.002, 95% bootstrap CI of the median [0.000, 0.025]
+   tuned fixed eta histogram: {0.25: 8, 0.5: 5, 1: 5, 2: 3, 5: 3, 12: 1, 20: 1}
+
+[rot / fre] headroom 0.277  global eta 1
+   F_letter  median 0.1266  mean 0.1283
+   A         median 0.1221  mean 0.1280
+   P         median 0.1201  mean 0.1273
+   F_global  median 0.1153  mean 0.1257
+   F_oracle  median 0.1054  mean 0.1150
+   gain vs F_letter: {'A': -0.0004, 'P': 0.0, 'F_oracle': 0.0587, 'F_global': 0.0}
+   shapes better: {'A': 13, 'P': 8} of 26   Holm p: {'A': np.float64(0.64956), 'P': np.float64(0.64956)}
+   A: gain -0.000, 95% bootstrap CI of the median [-0.020, 0.032]
+   P: gain 0.000, 95% bootstrap CI of the median [0.000, 0.003]
+   tuned fixed eta histogram: {0.25: 8, 0.5: 6, 1: 4, 2: 3, 3: 1, 8: 1, 12: 1, 20: 1, 30: 1}
+
+Noise floor: DTW of the reference demo itself to the held-out test demos
+   main: median 0.1084
+   rot: median 0.0639
+
+Arrival within 4T, share of runs, test demos
+   main fixed: {0.25: np.float64(0.42), 0.5: np.float64(0.85), 1: np.float64(0.92), 2: np.float64(0.92), 3: np.float64(0.95), 5: np.float64(0.96), 8: np.float64(1.0), 12: np.float64(1.0), 20: np.float64(0.99), 30: np.float64(1.0)}
+   rot fixed: {0.25: np.float64(0.67), 0.5: np.float64(0.96), 1: np.float64(0.96), 2: np.float64(0.96), 3: np.float64(1.0), 5: np.float64(1.0), 8: np.float64(1.0), 12: np.float64(1.0), 20: np.float64(1.0), 30: np.float64(1.0)}
+
+Secondary, 0.3 rad offset start, best in family per shape (in-sample, descriptive)
+   E main: fixed 0.0578  A 0.0720  P 0.0277   gain A -0.135  P 0.469
+   E rot: fixed 0.0452  A 0.0473  P 0.0231   gain A -0.009  P 0.515
+   Q main: fixed 0.0205  A 0.0286  P 0.0205   gain A -0.397  P 0.000
+   Q rot: fixed 0.0204  A 0.0242  P 0.0204   gain A -0.235  P 0.000
+
+Same, on held-out test-demo starts
+   E: fixed 0.0114  A 0.0091  P 0.0051   gain A -0.005  P 0.547
+   Q: fixed 0.0047  A 0.0059  P 0.0047   gain A -0.286  P 0.000
+
+Per shape, main split, DTW test
+   Angle              F 0.0411 (eta   0.5)  A 0.0464  P 0.0373
+   BendedLine         F 0.1217 (eta  0.25)  A 0.1515  P 0.1217
+   CShape             F 0.1094 (eta   0.5)  A 0.1315  P 0.0928
+   DoubleBendedLine   F 0.0866 (eta  0.25)  A 0.1092  P 0.0866
+   GShape             F 0.0914 (eta  0.25)  A 0.1129  P 0.0914
+   JShape             F 0.1563 (eta   0.5)  A 0.1594  P 0.1563
+   JShape_2           F 0.1693 (eta  0.25)  A 0.1898  P 0.1693
+   Khamesh            F 0.0569 (eta  0.25)  A 0.0603  P 0.0569
+   LShape             F 0.1042 (eta  20.0)  A 0.1042  P 0.1043
+   Leaf_1             F 0.1260 (eta  0.25)  A 0.1446  P 0.1260
+   Leaf_2             F 0.0450 (eta  0.25)  A 0.0531  P 0.0450
+   Line               F 0.0835 (eta  30.0)  A 0.0769  P 0.0499
+   NShape             F 0.0875 (eta   1.0)  A 0.0841  P 0.0733
+   PShape             F 0.0413 (eta  0.25)  A 0.0770  P 0.0413
+   RShape             F 0.0877 (eta  0.25)  A 0.0931  P 0.0877
+   Saeghe             F 0.0779 (eta   0.5)  A 0.0833  P 0.0779
+   Sharpc             F 0.1068 (eta   2.0)  A 0.1068  P 0.1068
+   Sine               F 0.0652 (eta   0.5)  A 0.0678  P 0.0679
+   Snake              F 0.0518 (eta   1.0)  A 0.0513  P 0.0511
+   Spoon              F 0.0610 (eta  0.25)  A 0.0613  P 0.0610
+   Sshape             F 0.0716 (eta   1.0)  A 0.0718  P 0.0683
+   Trapezoid          F 0.1543 (eta  0.25)  A 0.1772  P 0.1543
+   WShape             F 0.1311 (eta   1.0)  A 0.1278  P 0.1249
+   Worm               F 0.0608 (eta  0.25)  A 0.0636  P 0.0608
+   Zshape             F 0.1169 (eta   2.0)  A 0.1080  P 0.1060
+   heee               F 0.0946 (eta   3.0)  A 0.0948  P 0.0936

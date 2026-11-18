@@ -1,0 +1,7 @@
+title: "Before adding a world model"
+description: "We wanted to add a world model to a robot that learns stable motion. In six experiments, simple rules were enough. Why?"
+lang: en
+theme: jekyll-theme-cayman
+markdown: kramdown
+kramdown:
+  math_engine: mathjax

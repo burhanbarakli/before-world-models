@@ -1,0 +1,11 @@
+zone share all/sel/test 0.1005 0.1356 0.0654
+KAPI0 failures inside zone (paper): 1.0
+KURAL failures inside zone: 0.4720121028744327
+test, outside zone: S by opt [0.9043, 1.0, 1.0, 1.0, 0.9911]
+test, inside zone:  S by opt [0.1465, 0.535, 0.3822, 0.3758, 0.2887]
+H contributions by T,gap (each cell's gain/4): [[0.0161, 0.0289], [0.0, 0.0599]]
+model 0 L.01 ok & L.02 fail runs 87 with pre-gating at L=.01 87 mean pre ticks there 34.3
+model 1 L.01 ok & L.02 fail runs 66 with pre-gating at L=.01 66 mean pre ticks there 24.6
+model 2 L.01 ok & L.02 fail runs 50 with pre-gating at L=.01 50 mean pre ticks there 36.5
+analytic same 7 7
+mean pre ticks L=.01, T=8, by arm, by hole: {'m0': [10.2, 12.2, 28.6, 0.2, 22.2], 'm1': [2.8, 4.1, 19.3, 3.2, 17.2], 'm2': [10.0, 10.0, 33.6, 2.8, 9.5], 'weak': [5.5, 9.5, 48.2, 5.2, 10.8], 'analytic': [1.2, 0.9, 0.9, 1.2, 2.1]}

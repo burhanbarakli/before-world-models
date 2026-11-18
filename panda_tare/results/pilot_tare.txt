@@ -1,0 +1,15 @@
+P0 S1: tare error |F| median 0.0126 N (bias sd 0.1, noise/sqrt(30) 0.0158), |tau_tip| median 0.0041 Nm; ticks averaged 30-30; ok 1.00
+P0 S2: tare error |F| median 0.0506 N (bias sd 0.5, noise/sqrt(30) 0.0632), |tau_tip| median 0.0161 Nm; ticks averaged 30-30; ok 1.00
+P0 S3: tare error |F| median 0.2529 N (bias sd 2.0, noise/sqrt(30) 0.3162), |tau_tip| median 0.0842 Nm; ticks averaged 30-30; ok 0.90
+P1 S1 c = 5 mm: 30 of 40 measured: d = 14.25 mm -0.825 |r|, R2 0.84, median error 0.54 mm -> calibration (0.01425272833306575, -0.8249490046463626)
+   first measurement: | |r-hat| - |r| | median 0.63 mm; direction error median 3.4 / 90% 7.6 deg
+P1 S1 c = 2 mm: 40 of 40 measured: d = 12.73 mm -1.058 |r|, R2 0.84, median error 0.76 mm -> calibration (0.012727604467607796, -1.0583793799386598)
+   first measurement: | |r-hat| - |r| | median 0.62 mm; direction error median 4.4 / 90% 10.4 deg
+P1 S2 c = 5 mm: 30 of 40 measured: d = 10.31 mm -0.291 |r|, R2 0.28, median error 0.95 mm -> fixed step c
+   first measurement: | |r-hat| - |r| | median 2.14 mm; direction error median 11.5 / 90% 35.7 deg
+P1 S2 c = 2 mm: 40 of 40 measured: d = 9.68 mm -0.451 |r|, R2 0.32, median error 1.44 mm -> fixed step c
+   first measurement: | |r-hat| - |r| | median 2.12 mm; direction error median 14.5 / 90% 60.1 deg
+P1 S3 c = 5 mm: 30 of 40 measured: d = 8.82 mm -0.046 |r|, R2 0.03, median error 1.73 mm -> fixed step c
+   first measurement: | |r-hat| - |r| | median 10.91 mm; direction error median 38.5 / 90% 127.5 deg
+P1 S3 c = 2 mm: 40 of 40 measured: d = 7.53 mm -0.033 |r|, R2 0.01, median error 2.00 mm -> fixed step c
+   first measurement: | |r-hat| - |r| | median 11.50 mm; direction error median 64.8 / 90% 148.8 deg

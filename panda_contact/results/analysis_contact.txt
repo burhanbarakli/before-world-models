@@ -1,0 +1,44 @@
+=== paper arm, c = 5 mm, e > 0 (primary) ===
+S: TABAN 0.618  REFLEKS 0.942  KAHIN 0.959
+G  S(TABAN, e=0)             +0.958  percentile [+0.929, +0.981]  recentred [+0.929, +0.981]  pivot [+0.936, +0.988]
+K  S_e0(TABAN) - S(TABAN)    +0.340  percentile [+0.319, +0.360]  recentred [+0.319, +0.361]  pivot [+0.320, +0.361]
+R  S(REFLEKS) - S(TABAN)     +0.324  percentile [+0.309, +0.338]  recentred [+0.309, +0.338]  pivot [+0.310, +0.339]
+W  S(KAHIN) - S(REFLEKS)     +0.016  percentile [+0.002, +0.036]  recentred [+0.003, +0.036]  pivot [-0.003, +0.031]
+Outcome: a small margin cannot be excluded; no model, the burden is on the model
+
+arrival time, s (failures count as tf): TABAN 9.04  REFLEKS 7.34  KAHIN 5.68   REFLEKS - KAHIN +1.66
+Time clause: W small but KAHIN saves at least 1 s; success does not open the model, a separate protocol with time as the target is needed
+failure types, paper arm, c = 5, e > 0 (share of runs):
+   TABAN    not deep 0.353  jammed 0.352  over F_max 0.047
+   REFLEKS  not deep 0.011  jammed 0.005  over F_max 0.047
+   KAHIN    not deep 0.000  jammed 0.000  over F_max 0.041
+1 - S(KAHIN): 0.041
+
+analytic arm: TABAN 0.623  REFLEKS 0.944  KAHIN 0.956   TABAN e=0 0.957   W +0.013
+
+model 0: TABAN 0.626  REFLEKS 0.944  KAHIN 0.959   TABAN e=0 0.958   W +0.015
+
+model 1: TABAN 0.621  REFLEKS 0.945  KAHIN 0.958   TABAN e=0 0.958   W +0.013
+
+model 2: TABAN 0.608  REFLEKS 0.939  KAHIN 0.960   TABAN e=0 0.959   W +0.021
+
+=== paper arm, c = 2 mm (secondary) ===
+S: TABAN 0.239  REFLEKS 0.775  KAHIN 0.946   G 0.946  K +0.707  R +0.537  W +0.171 [+0.141, +0.198]
+
+slices, paper arm, c = 5, e > 0:             TABAN  REFLEKS  KAHIN
+   T = 8.0                                0.587  0.906  0.935
+   T = 4.0                                0.650  0.979  0.983
+   h + tau = 0.020                        0.615  0.958  0.984
+   h + tau = 0.065                        0.631  0.950  0.964
+   h + tau = 0.130                        0.609  0.919  0.929
+   no disturbance                         0.646  0.991  1.000
+   push 0.25 s before the rim             0.591  0.893  0.918
+   e = 0 mm                               0.958  0.958  nan
+   e = 3 mm                               0.959  0.959  0.959
+   e = 6 mm                               0.890  0.939  0.959
+   e = 10 mm                              0.006  0.929  0.959
+   mu in [0.2, 0.4)                       0.627  0.944  0.952
+   mu in [0.4, 0.6)                       0.631  0.962  0.980
+   mu in [0.6, 0.8)                       0.597  0.921  0.944
+
+push applied in disturbed runs: 1.000

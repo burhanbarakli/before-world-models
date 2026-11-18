@@ -1,0 +1,39 @@
+=== A, single shot: paper arm, e > 0, both clearances (primary) ===
+t: KAHIN 6.19  REFLEKS-H 9.21  MOMENT 7.40   S: KAHIN 0.940  REFLEKS-H 0.696  MOMENT 0.883
+D_A = t(MOMENT) - t(KAHIN), s      +1.210  percentile [+1.041, +1.388]  recentred [+1.042, +1.389]  pivot [+1.033, +1.379]
+Outcome A: position knowledge leaves time the modelless rival cannot take: this setting's model is a candidate
+t(REFLEKS-H) - t(KAHIN), s         +3.019  percentile [+2.745, +3.286]  recentred [+2.744, +3.285]  pivot [+2.751, +3.293]
+t(MOMENT) - t(REFLEKS-H), s        -1.809  percentile [-1.991, -1.609]  recentred [-1.988, -1.606]  pivot [-2.008, -1.626]
+   c = 5 mm: t 6.08  8.04  6.69   S 0.952  0.791  0.934   D_A +0.608
+   c = 2 mm: t 6.30  10.38  8.11   S 0.928  0.601  0.831   D_A +1.812
+MOMENT direction error, deg (median / 90%, share with a direction):
+   e = 3 mm, c = 5 mm:  40.2 / 158.0   0.05
+   e = 3 mm, c = 2 mm:   4.1 /  22.1   0.95
+   e = 6 mm, c = 5 mm:   2.5 /  11.5   0.93
+   e = 6 mm, c = 2 mm:   6.1 /  16.6   0.99
+   e = 10 mm, c = 5 mm:   5.2 /  14.1   0.99
+   e = 10 mm, c = 2 mm:  10.8 /  38.3   0.89
+e = 0 (false trigger cost): t REFLEKS-H 6.26  MOMENT 6.26
+as run (t_in, only runs not reaching depth count as tf): D_A +1.336
+slices, t:                               KAHIN  REFLEKS-H  MOMENT
+   T = 8.0                              8.28  11.62  9.60
+   T = 4.0                              4.10  6.79  5.20
+   h + tau = 0.020                      5.73  7.77  6.72
+   h + tau = 0.065                      6.08  8.28  7.15
+   h + tau = 0.130                      6.76  11.58  8.32
+   no disturbance                       5.58  8.88  6.77
+   push 0.25 s                          6.80  9.54  8.03
+   e = 3 mm                             6.23  7.34  6.57
+   e = 6 mm                             6.19  9.31  7.02
+   e = 10 mm                            6.14  10.97  8.60
+over F_max: KAHIN 0.060  REFLEKS-H 0.068  MOMENT 0.068
+
+=== B, persistent offset: model 0, 5-trial sequences (primary) ===
+t: KAHIN 6.21  HAFIZA 6.66   S: KAHIN 0.942  HAFIZA 0.917
+D_B = t(HAFIZA) - t(KAHIN), s      +0.450  percentile [+0.377, +0.535]  recentred [+0.377, +0.535]  pivot [+0.365, +0.523]
+Outcome B: a small margin cannot be excluded; no model, the burden is on the model
+as run (t_in, only runs not reaching depth count as tf): D_B +0.528
+t by trial:  1: K 6.24 H 7.36  2: K 6.27 H 6.71  3: K 6.19 H 6.49  4: K 6.14 H 6.36  5: K 6.19 H 6.36
+HAFIZA offset error by trial, mm (median): 6.05  2.77  2.36  2.11  2.07
+   c = 5 mm: t KAHIN 6.14 HAFIZA 6.26  D_B +0.124
+   c = 2 mm: t KAHIN 6.27 HAFIZA 7.05  D_B +0.776

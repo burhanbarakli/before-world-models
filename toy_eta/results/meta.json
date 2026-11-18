@@ -1,0 +1,53 @@
+{
+ "args": {
+  "cmd": "run",
+  "out": "./toy_eta/results",
+  "seed": 0,
+  "workers": 9,
+  "seeds": 4,
+  "n": 9,
+  "sched_every": 1,
+  "families": null
+ },
+ "etas": [
+  0.25,
+  0.5,
+  1.0,
+  2.0,
+  4.0,
+  8.0,
+  16.0,
+  32.0,
+  64.0
+ ],
+ "sched_levels": [
+  0.5,
+  1.4142135623730951,
+  4.000000000000001,
+  11.313708498984763,
+  32.00000000000001
+ ],
+ "families": [
+  "ideal",
+  "delay",
+  "lag",
+  "gain",
+  "friction",
+  "drift",
+  "delay+lag",
+  "all"
+ ],
+ "budgets": [
+  200,
+  1000,
+  5000
+ ],
+ "weights": {
+  "mim": 2.0,
+  "gate": 1.0,
+  "goal": 1.0,
+  "smooth": 0.1
+ },
+ "beta": 1.0,
+ "wall_seconds": 754.8069999217987
+}

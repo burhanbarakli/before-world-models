@@ -1,0 +1,47 @@
+(0, 1, 4.0, 'other', True) n 57 still ok 1.0
+(0, 1, 4.0, 'rescued', True) n 302 still ok 0.977
+(0, 1, 8.0, 'other', False) n 9 still ok 0.0
+(0, 1, 8.0, 'other', True) n 38 still ok 1.0
+(0, 1, 8.0, 'rescued', True) n 271 still ok 0.649
+(0, 2, 4.0, 'other', True) n 27 still ok 1.0
+(0, 2, 4.0, 'rescued', True) n 281 still ok 0.947
+(0, 2, 8.0, 'other', False) n 1 still ok 0.0
+(0, 2, 8.0, 'other', True) n 5 still ok 1.0
+(0, 2, 8.0, 'rescued', True) n 28 still ok 0.964
+(1, 1, 4.0, 'other', True) n 59 still ok 1.0
+(1, 1, 4.0, 'rescued', True) n 311 still ok 0.977
+(1, 1, 8.0, 'other', False) n 5 still ok 0.0
+(1, 1, 8.0, 'other', True) n 37 still ok 1.0
+(1, 1, 8.0, 'rescued', True) n 260 still ok 0.715
+(1, 2, 4.0, 'other', True) n 33 still ok 1.0
+(1, 2, 4.0, 'rescued', True) n 264 still ok 0.958
+(1, 2, 8.0, 'other', False) n 3 still ok 0.0
+(1, 2, 8.0, 'other', True) n 14 still ok 1.0
+(1, 2, 8.0, 'rescued', True) n 57 still ok 0.912
+(2, 1, 4.0, 'other', True) n 49 still ok 1.0
+(2, 1, 4.0, 'rescued', True) n 311 still ok 0.981
+(2, 1, 8.0, 'other', False) n 8 still ok 0.0
+(2, 1, 8.0, 'other', True) n 33 still ok 1.0
+(2, 1, 8.0, 'rescued', True) n 277 still ok 0.798
+(2, 2, 4.0, 'other', True) n 29 still ok 1.0
+(2, 2, 4.0, 'rescued', True) n 293 still ok 0.949
+(2, 2, 8.0, 'other', True) n 2 still ok 1.0
+(2, 2, 8.0, 'rescued', True) n 9 still ok 1.0
+(4, 1, 4.0, 'other', True) n 46 still ok 1.0
+(4, 1, 4.0, 'rescued', True) n 306 still ok 1.0
+(4, 1, 8.0, 'other', False) n 3 still ok 0.0
+(4, 1, 8.0, 'other', True) n 5 still ok 1.0
+(4, 1, 8.0, 'rescued', True) n 81 still ok 0.877
+(4, 2, 4.0, 'other', True) n 29 still ok 1.0
+(4, 2, 4.0, 'rescued', True) n 269 still ok 0.948
+clock trigger (stored): KURAL 0.8547 KAPI0 0.9596 TAB 0.9696 ORC 0.9696 H 0.1049 P 0.0100 Q 0.0100  S by opt [0.8547 0.9696 0.9596 0.9592 0.9451]
+   swapped: H 0.1250 P 0.0175 Q 0.0182
+height trigger: KURAL 0.8547 KAPI0 0.9576 TAB 0.9572 ORC 0.9592 H 0.1029 P -0.0004 Q 0.0015  S by opt [0.8547 0.9572 0.9576 0.9592 0.9451]
+   swapped: H 0.1204 P 0.0001 Q 0.0033
+ T=8.0 gap=0.4 test by opt clock [0.929 1.    0.994 0.993 0.971] height [0.929 0.992 0.993 0.993 0.971]
+ T=8.0 gap=0.25 test by opt clock [0.729 0.878 0.844 0.843 0.841] height [0.729 0.839 0.843 0.843 0.841]
+ T=4.0 gap=0.4 test by opt clock [1. 1. 1. 1. 1.] height [1. 1. 1. 1. 1.]
+ T=4.0 gap=0.25 test by opt clock [0.761 1.    1.    1.    0.968] height [0.761 0.998 0.995 1.    0.968]
+analytic clock: KURAL 0.8558 KAPI0 0.9592 TAB 0.9600 ORC 0.9600 H 0.1033 P 0.0008 Q 0.0008
+analytic height: KURAL 0.8558 KAPI0 0.9583 TAB 0.9587 ORC 0.9592 H 0.1025 P 0.0004 Q 0.0008
+height trigger recentred: {'H': [0.0742, 0.1364], 'P': [-0.0095, 0.0044], 'Q': [0.0, 0.0047]}

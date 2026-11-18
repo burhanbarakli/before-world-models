@@ -1,0 +1,19 @@
+elapsed 162.07866883277893
+(0, 8.0, 0.07, 0.025, 0.25, 0, 'time') bits True z_trig [0.2646 0.265  0.2649 0.2654 0.2642] t_d [6.08 5.92 5.95 6.03 5.98]
+  through-rim frac 0.11 z_pre mean 0.2648 n_pre mean 0.0 n_post 0.0 n_stop 0.0
+  t_rim mean 6.259 t_deep mean 7.506 clean t_rim [6.33 6.17 6.2  6.28 6.23] clean n_pre [0. 0. 0. 0. 0.]
+(0, 8.0, 0.07, 0.025, 0.25, 1, 'time') bits True z_trig [0.2646 0.265  0.2649 0.2654 0.2642] t_d [6.08 5.92 5.95 6.03 5.98]
+  through-rim frac 0.08 z_pre mean 0.2675 n_pre mean 19.0 n_post 29.3 n_stop 19.1
+  t_rim mean 6.518 t_deep mean 7.785 clean t_rim [6.36 6.21 6.3  6.28 6.27] clean n_pre [14. 15. 40.  0. 26.]
+(0, 8.0, 0.07, 0.025, 0.25, 2, 'time') bits True z_trig [0.2646 0.265  0.2649 0.2654 0.2642] t_d [6.08 5.92 5.95 6.03 5.98]
+  through-rim frac 0.11 z_pre mean 0.2648 n_pre mean 0.0 n_post 18.0 n_stop 15.4
+  t_rim mean 6.415 t_deep mean 7.67 clean t_rim [6.33 6.17 6.2  6.28 6.23] clean n_pre [0. 0. 0. 0. 0.]
+(None, 8.0, 0.07, 0.025, 0.25, 0, 'time') bits True z_trig [0.2652 0.2643 0.2644 0.2653 0.264 ] t_d [6.08 6.03 6.03 6.08 6.01]
+  through-rim frac 0.12 z_pre mean 0.2646 n_pre mean 0.0 n_post 0.0 n_stop 0.0
+  t_rim mean 6.31 t_deep mean 7.584 clean t_rim [6.33 6.28 6.28 6.33 6.26] clean n_pre [0. 0. 0. 0. 0.]
+(None, 8.0, 0.07, 0.025, 0.25, 1, 'time') bits True z_trig [0.2652 0.2643 0.2644 0.2653 0.264 ] t_d [6.08 6.03 6.03 6.08 6.01]
+  through-rim frac 0.12 z_pre mean 0.2646 n_pre mean 0.0 n_post 26.7 n_stop 17.6
+  t_rim mean 6.514 t_deep mean 7.799 clean t_rim [6.33 6.28 6.28 6.33 6.26] clean n_pre [0. 0. 0. 0. 0.]
+(None, 8.0, 0.07, 0.025, 0.25, 2, 'time') bits True z_trig [0.2652 0.2643 0.2644 0.2653 0.264 ] t_d [6.08 6.03 6.03 6.08 6.01]
+  through-rim frac 0.12 z_pre mean 0.2646 n_pre mean 0.0 n_post 17.6 n_stop 15.4
+  t_rim mean 6.467 t_deep mean 7.749 clean t_rim [6.33 6.28 6.28 6.33 6.26] clean n_pre [0. 0. 0. 0. 0.]

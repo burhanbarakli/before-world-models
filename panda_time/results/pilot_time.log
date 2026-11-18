@@ -1,0 +1,36 @@
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+P3 regression, 20 runs: worst |end_z diff| 0.403 mm, same outcome False -> FAIL
+P1 moment direction, 40 runs: direction found 1.00, error median 1.9 deg, 90% 8.8 deg -> pass
+   REFLEKS-H v_s 0.01 pitch 2.0c: mean t 10.21  SR 0.878
+   REFLEKS-H v_s 0.01 pitch 1.5c: mean t 10.27  SR 0.872
+   REFLEKS-H v_s 0.01 pitch 1.0c: mean t 10.81  SR 0.803
+   REFLEKS-H v_s 0.02 pitch 2.0c: mean t 9.53  SR 0.928
+   REFLEKS-H v_s 0.02 pitch 1.5c: mean t 10.05  SR 0.868
+   REFLEKS-H v_s 0.02 pitch 1.0c: mean t 10.50  SR 0.847
+   REFLEKS-H v_s 0.04 pitch 2.0c: mean t 11.85  SR 0.560
+   REFLEKS-H v_s 0.04 pitch 1.5c: mean t 12.07  SR 0.542
+   REFLEKS-H v_s 0.04 pitch 1.0c: mean t 11.79  SR 0.562
+P4 REFLEKS-H chosen: v_s 0.02, pitch 2.0c
+   MOMENT v_l 0.01 n_w  5: mean t 8.37  SR 0.963
+   MOMENT v_l 0.01 n_w 10: mean t 8.41  SR 0.963
+   MOMENT v_l 0.01 n_w 20: mean t 8.48  SR 0.965
+   MOMENT v_l 0.02 n_w  5: mean t 8.58  SR 0.940
+   MOMENT v_l 0.02 n_w 10: mean t 8.55  SR 0.948
+   MOMENT v_l 0.02 n_w 20: mean t 8.63  SR 0.950
+   MOMENT v_l 0.04 n_w  5: mean t 11.21  SR 0.647
+   MOMENT v_l 0.04 n_w 10: mean t 11.26  SR 0.643
+   MOMENT v_l 0.04 n_w 20: mean t 11.30  SR 0.642
+P4 MOMENT chosen: v_l 0.01, n_w 5
+P2 memory estimate, c = 5 mm, 2682 successful runs: error median 2.84 mm, 90% 3.31 mm -> pass
+P2 memory estimate, c = 2 mm, 1915 successful runs: error median 1.14 mm, 90% 1.38 mm -> pass
+P5 time: 5.22 s per run at T = 8 (tf 16), about 21.3 h for A + B on 9 processes (scaled to mean tf 14) -> B seeds to 10
+chosen: V_S 0.02, PITCH 2.0, V_L 0.01, N_W 5

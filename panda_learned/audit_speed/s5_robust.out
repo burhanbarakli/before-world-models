@@ -1,0 +1,51 @@
+base          KURAL 0.855 KAPI0 0.960 TAB 0.970 ORC 0.970 | H +0.105 P +0.010 Q +0.010
+swapped halves KURAL 0.778 KAPI0 0.903 TAB 0.921 ORC 0.921 | H +0.125 P +0.018 Q +0.018
+model 0       KURAL 0.858 KAPI0 0.960 TAB 0.972 ORC 0.973 | H +0.103 P +0.012 Q +0.012  swap: KURAL 0.781 KAPI0 0.905 TAB 0.929 ORC 0.929 | H +0.124 P +0.024 Q +0.024
+model 1       KURAL 0.853 KAPI0 0.959 TAB 0.968 ORC 0.968 | H +0.107 P +0.009 Q +0.009  swap: KURAL 0.776 KAPI0 0.902 TAB 0.919 ORC 0.920 | H +0.125 P +0.018 Q +0.018
+model 2       KURAL 0.854 KAPI0 0.959 TAB 0.968 ORC 0.968 | H +0.105 P +0.009 Q +0.009  swap: KURAL 0.777 KAPI0 0.902 TAB 0.913 ORC 0.915 | H +0.126 P +0.011 Q +0.012
+drop model 0  KURAL 0.853 KAPI0 0.959 TAB 0.968 ORC 0.968 | H +0.106 P +0.009 Q +0.009
+drop model 1  KURAL 0.856 KAPI0 0.960 TAB 0.970 ORC 0.970 | H +0.104 P +0.010 Q +0.010
+drop model 2  KURAL 0.855 KAPI0 0.960 TAB 0.970 ORC 0.970 | H +0.105 P +0.011 Q +0.011
+drop hole 0   KURAL 0.855 KAPI0 0.964 TAB 0.974 ORC 0.974 | H +0.109 P +0.011 Q +0.011  swap: KURAL 0.781 KAPI0 0.905 TAB 0.923 ORC 0.924 | H +0.124 P +0.018 Q +0.018
+drop hole 1   KURAL 0.846 KAPI0 0.958 TAB 0.968 ORC 0.968 | H +0.111 P +0.011 Q +0.011  swap: KURAL 0.789 KAPI0 0.910 TAB 0.930 ORC 0.931 | H +0.121 P +0.021 Q +0.021
+drop hole 2   KURAL 0.860 KAPI0 0.955 TAB 0.962 ORC 0.962 | H +0.096 P +0.007 Q +0.007  swap: KURAL 0.770 KAPI0 0.900 TAB 0.912 ORC 0.913 | H +0.130 P +0.012 Q +0.013
+drop hole 3   KURAL 0.861 KAPI0 0.961 TAB 0.974 ORC 0.974 | H +0.100 P +0.013 Q +0.012  swap: KURAL 0.769 KAPI0 0.892 TAB 0.913 ORC 0.915 | H +0.122 P +0.021 Q +0.023
+drop hole 4   KURAL 0.852 KAPI0 0.960 TAB 0.970 ORC 0.970 | H +0.108 P +0.010 Q +0.010  swap: KURAL 0.781 KAPI0 0.909 TAB 0.923 ORC 0.924 | H +0.127 P +0.014 Q +0.016
+random 10/10 splits n= 5000
+ H: min 0.0989 p2.5 0.1046 med 0.1149 p97.5 0.1253 max 0.1313
+ P: min 0.0044 p2.5 0.0086 med 0.0138 p97.5 0.0190 max 0.0222
+ Q: min 0.0044 p2.5 0.0086 med 0.0142 p97.5 0.0196 max 0.0232
+ outcome share: H fail,gate suffices,P>=.03,no decision [0. 1. 0. 0.]
+ model 0 Q splits: med 0.0179 max 0.0275 share>=.03 0.000
+ model 1 Q splits: med 0.0133 max 0.0237 share>=.03 0.000
+ model 2 Q splits: med 0.0104 max 0.0187 share>=.03 0.000
+all seeds: by option [0.8164 0.9454 0.9313 0.9297 0.9119] oracle 0.9454
+TABLOK choices (option index) counts: [12 60  0  0  0] of 72
+per model [[5, 19, 0, 0, 0], [4, 20, 0, 0, 0], [3, 21, 0, 0, 0]]
+test: oracle 0.9695833333333334 L=.01 0.9695833333333334 runs oracle-success but L=.01 fails: 0.0 count 0 of 7200
+nestedness (all seeds) P(success at larger option | success at smaller L)-style: fail L=.01 & succ other: 0.0
+ opt 0.02 ok & opt 0.01 fail (all seeds): 0.00000  reverse 0.01410
+ opt 0.04 ok & opt 0.02 fail (all seeds): 0.00000  reverse 0.00167
+ opt 0.08 ok & opt 0.04 fail (all seeds): 0.00000  reverse 0.01771
+ opt none ok & opt 0.02 fail (all seeds): 0.00000  reverse 0.11493
+ opt none ok & opt 0.01 fail (all seeds): 0.00000  reverse 0.12903
+oracle actual 0.9695833333333334 if options independent given cell 1.0 if fully nested 0.9696 (paper, test)
+analytic: actual 0.96 indep 0.9999 nested 0.96
+gated (KAPI0) per-run agreement across 3 models, all seeds: 0.9929166666666667  no-gate: 0.9825
+T=8.0 gap=0.4: test S by option [0.929 1.    0.994 0.993 0.971]  all seeds [0.883 0.999 0.982 0.981 0.955]   analytic [0.883 0.988 0.984 0.984 0.956]  weak [0.857 0.912 0.955 0.949 0.922]
+T=8.0 gap=0.25: test S by option [0.729 0.878 0.844 0.843 0.841]  all seeds [0.639 0.783 0.743 0.742 0.737]   analytic [0.64  0.742 0.74  0.74  0.736]  weak [0.626 0.754 0.753 0.733 0.722]
+T=4.0 gap=0.4: test S by option [1. 1. 1. 1. 1.]  all seeds [1. 1. 1. 1. 1.]   analytic [0.999 1.    1.    1.    1.   ]  weak [0.999 0.992 1.    1.    1.   ]
+T=4.0 gap=0.25: test S by option [0.761 1.    1.    1.    0.968]  all seeds [0.744 1.    1.    0.996 0.955]   analytic [0.746 1.    1.    0.996 0.958]  weak [0.75  0.992 1.    1.    0.958]
+by h+tau (paper, test): 
+ 0.020 eta 20.00:  [0.968 0.977 0.977 0.977 0.977]   analytic [0.965 0.975 0.975 0.975 0.97 ]
+ 0.040 eta 15.00:  [0.955 0.968 0.968 0.968 0.968]   analytic [0.95 0.97 0.97 0.97 0.97]
+ 0.045 eta 13.33:  [0.957 0.97  0.97  0.97  0.97 ]   analytic [0.955 0.97  0.97  0.97  0.97 ]
+ 0.060 eta 10.00:  [0.948 0.97  0.968 0.968 0.965]   analytic [0.95  0.97  0.97  0.97  0.965]
+ 0.065 eta  9.23:  [0.943 0.968 0.968 0.968 0.965]   analytic [0.945 0.965 0.965 0.965 0.965]
+ 0.070 eta  8.57:  [0.892 0.967 0.96  0.96  0.952]   analytic [0.91  0.96  0.96  0.96  0.955]
+ 0.080 eta  7.50:  [0.858 0.968 0.962 0.96  0.948]   analytic [0.86 0.96 0.96 0.96 0.95]
+ 0.090 eta  6.67:  [0.802 0.968 0.95  0.95  0.927]   analytic [0.795 0.95  0.95  0.95  0.92 ]
+ 0.095 eta  6.32:  [0.797 0.968 0.958 0.957 0.933]   analytic [0.8   0.955 0.955 0.955 0.93 ]
+ 0.110 eta  5.45:  [0.735 0.968 0.948 0.948 0.92 ]   analytic [0.735 0.95  0.95  0.95  0.92 ]
+ 0.115 eta  5.22:  [0.72  0.968 0.945 0.945 0.92 ]   analytic [0.725 0.945 0.945 0.945 0.92 ]
+ 0.130 eta  4.62:  [0.682 0.973 0.94  0.938 0.897]   analytic [0.68 0.95 0.94 0.94 0.9 ]

@@ -1,0 +1,37 @@
+data: 0 missing of 4860; seeds [np.int64(500), np.int64(501)]
+=== TARE against DOKUN-KAHIN per level, models 0-2, seeds 500-501 (98.33% intervals) ===
+S1: t DOKUN 7.69  TARE 7.93  M2R 9.37   S DOKUN 1.000  TARE 0.987  M2R 0.931
+    DT +0.243  models x holes x seeds [+0.081, +0.658] -> small;  model-hole cells [+0.133, +0.399] -> suffices
+    Outcome S1 (conservative of the two): small
+    M2R - DOKUN on the same seeds (descriptive): +1.680  [+1.203, +2.194]
+S2: t DOKUN 7.69  TARE 9.41  M2R 11.47   S DOKUN 1.000  TARE 0.939  M2R 0.713
+    DT +1.720  models x holes x seeds [+1.315, +1.981] -> gap;  model-hole cells [+1.578, +1.866] -> gap
+    Outcome S2 (conservative of the two): gap
+    M2R - DOKUN on the same seeds (descriptive): +3.777  [+1.620, +5.597]
+S3: t DOKUN 7.69  TARE 10.87  M2R 12.28   S DOKUN 1.000  TARE 0.800  M2R 0.615
+    DT +3.181  models x holes x seeds [+2.355, +3.967] -> gap;  model-hole cells [+2.789, +3.606] -> gap
+    Outcome S3 (conservative of the two): gap
+    M2R - DOKUN on the same seeds (descriptive): +4.594  [+2.266, +6.016]
+
+Reading (pre-registered):
+   S1 small: the learned-estimator protocol at S1 stays open; its rival is TARE
+   S2 gap: the rival of any learned-estimator protocol here is TARE
+   S3 gap: the rival of any learned-estimator protocol here is TARE
+
+DT by cell (s):           c = 5: e = 3    e = 6   e = 10    c = 2: e = 3    e = 6   e = 10
+   S1                  +0.000  +0.045  +0.048          +0.092  +0.097  +1.179
+   S2                  +0.000  +0.044  +0.580          +0.395  +2.797  +6.505
+   S3                  +0.000  +1.900  +3.983          +1.183  +4.652  +7.368
+   S1 by delay: 20 ms +0.305  65 ms +0.203  130 ms +0.223
+   S2 by delay: 20 ms +1.403  65 ms +1.555  130 ms +2.203
+   S3 by delay: 20 ms +3.045  65 ms +2.765  130 ms +3.733
+   S1 by model: 0: +0.173  1: +0.382  2: +0.176
+   S2 by model: 0: +1.719  1: +1.812  2: +1.630
+   S3 by model: 0: +3.118  1: +3.460  2: +2.966
+
+TARE first measurement and tare (medians over runs with a measurement):
+   S1: | |r-hat| - |r| | 0.43 mm, direction error 4.9 deg (90% 12.8), last estimate error 0.85 mm, aims 1.27, tare error |F| 0.0153 N, ticks 30-30
+   S2: | |r-hat| - |r| | 1.48 mm, direction error 20.0 deg (90% 60.5), last estimate error 2.65 mm, aims 2.16, tare error |F| 0.0611 N, ticks 30-30
+   S3: | |r-hat| - |r| | 10.22 mm, direction error 72.4 deg (90% 136.3), last estimate error 5.17 mm, aims 2.72, tare error |F| 0.3056 N, ticks 30-30
+
+calibration used by TARE: [[[0.01425272833306575, -0.8249490046463626], [0.012727604467607796, -1.0583793799386598]], [[nan, nan], [nan, nan]], [[nan, nan], [nan, nan]]]

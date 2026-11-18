@@ -1,0 +1,10 @@
+h=0 tau=0 eta=5: fail depth 0.19999999999999996 lat 0.0 tilt 0.0
+SR by hole [0.8  0.8  0.75 0.85 0.8 ] by kind [0.6 1. ]
+depth reached [mm], target 60, need 54: min/median/max [43.84 60.   60.02]
+by kind, median depth [60. 60.]
+lat [mm] over all eta>=2, R: max 11.2
+
+With the lateral and tilt criteria only (no depth), by eta, h=0 tau=0: [0.74 1.   1.   1.   1.   1.   1.   1.  ]
+With lateral and tilt only, h=100 tau=50: [0.93 1.   1.   1.   1.   1.   0.55 0.76]
+Fraction reaching depth 54 mm by h, tau=0, eta=5: [0.8  0.79 0.79 0.79 0.78]
+With depth need 50 mm: [0.8  0.8  0.8  0.79 0.86]

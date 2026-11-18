@@ -1,0 +1,35 @@
+same disturbance across gaps: 200 of 200
+z_pre-rim mm by T,gap, mean (paper): [[23.9, 14.6], [51.5, 30.8]] min [[20.8, 12.8], [47.2, 27.8]]
+== paper
+ P(through rim): 0.03  through & lat>5mm at landing: 0.025 by T,gap [[0.0, 0.1], [0.0, 0.0]]
+ test half lost 0.015 sel half 0.035
+ opt none: fail 0.1836; failures that are 'lost' 0.136; lost that fail 1.000; non-lost fail rate 0.1627; test: S 0.8547, S given not lost 0.8677
+ opt 0.01: fail 0.0546; failures that are 'lost' 0.443; lost that fail 0.967; non-lost fail rate 0.0312; test: S 0.9696, S given not lost 0.9839
+ opt 0.02: fail 0.0687; failures that are 'lost' 0.364; lost that fail 1.000; non-lost fail rate 0.0448; test: S 0.9596, S given not lost 0.9742
+ opt 0.04: fail 0.0703; failures that are 'lost' 0.355; lost that fail 1.000; non-lost fail rate 0.0465; test: S 0.9592, S given not lost 0.9738
+ opt 0.08: fail 0.0881; failures that are 'lost' 0.284; lost that fail 1.000; non-lost fail rate 0.0647; test: S 0.9451, S given not lost 0.9595
+ ticks d>L in band before t_d, share of (model,cell,gap,hole) with any, by L: [0.814 0.319 0.069 0.   ] mean ticks [18.9  4.5  0.6  0. ]
+   by T for L=.01: [0.722 0.906] ; L=.02: [0.1   0.539] ; L=.04: [0.    0.139]
+   max d before t_d 0.0615 p99 0.055 max d in band overall 0.0615
+== analytic
+ P(through rim): 0.0304  through & lat>5mm at landing: 0.0254 by T,gap [[0.0, 0.1017], [0.0, 0.0]]
+ test half lost 0.0158 sel half 0.035
+ opt none: fail 0.1829; failures that are 'lost' 0.139; lost that fail 1.000; non-lost fail rate 0.1616; test: S 0.8558, S given not lost 0.8696
+ opt 0.01: fail 0.0675; failures that are 'lost' 0.377; lost that fail 1.000; non-lost fail rate 0.0432; test: S 0.9600, S given not lost 0.9754
+ opt 0.02: fail 0.0690; failures that are 'lost' 0.369; lost that fail 1.000; non-lost fail rate 0.0447; test: S 0.9592, S given not lost 0.9746
+ opt 0.04: fail 0.0700; failures that are 'lost' 0.363; lost that fail 1.000; non-lost fail rate 0.0457; test: S 0.9592, S given not lost 0.9746
+ opt 0.08: fail 0.0877; failures that are 'lost' 0.290; lost that fail 1.000; non-lost fail rate 0.0639; test: S 0.9446, S given not lost 0.9598
+ ticks d>L in band before t_d, share of (model,cell,gap,hole) with any, by L: [0.433 0.217 0.067 0.   ] mean ticks [10.6  3.9  0.6  0. ]
+   by T for L=.01: [0.15  0.717] ; L=.02: [0.    0.433] ; L=.04: [0.    0.133]
+   max d before t_d 0.0549 p99 0.0549 max d in band overall 0.0549
+== weak
+ P(through rim): 0.0267  through & lat>5mm at landing: 0.0221 by T,gap [[0.0, 0.0883], [0.0, 0.0]]
+ test half lost 0.0138 sel half 0.0304
+ opt none: fail 0.1921; failures that are 'lost' 0.115; lost that fail 1.000; non-lost fail rate 0.1738; test: S 0.8450, S given not lost 0.8568
+ opt 0.01: fail 0.0871; failures that are 'lost' 0.211; lost that fail 0.830; non-lost fail rate 0.0703; test: S 0.9263, S given not lost 0.9387
+ opt 0.02: fail 0.0729; failures that are 'lost' 0.297; lost that fail 0.981; non-lost fail rate 0.0524; test: S 0.9529, S given not lost 0.9662
+ opt 0.04: fail 0.0794; failures that are 'lost' 0.278; lost that fail 1.000; non-lost fail rate 0.0586; test: S 0.9471, S given not lost 0.9603
+ opt 0.08: fail 0.0992; failures that are 'lost' 0.223; lost that fail 1.000; non-lost fail rate 0.0788; test: S 0.9321, S given not lost 0.9451
+ ticks d>L in band before t_d, share of (model,cell,gap,hole) with any, by L: [0.833 0.517 0.208 0.   ] mean ticks [22.9  9.5  2.4  0. ]
+   by T for L=.01: [0.717 0.95 ] ; L=.02: [0.3   0.733] ; L=.04: [0.033 0.383]
+   max d before t_d 0.0763 p99 0.0719 max d in band overall 0.0763

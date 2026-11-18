@@ -1,0 +1,42 @@
+=== M2R against DOKUN-KAHIN per sensor level, models 0-2, e > 0 (primary, 98.33% intervals) ===
+S1: t DOKUN 7.68  M2R 9.36   S DOKUN 1.000  M2R 0.923
+    D2 +1.680  percentile [+1.485, +1.944]  recentred [+1.486, +1.946]  pivot [+1.417, +1.876]
+    Outcome S1: gap: an information gap remains
+    M2C (weak calibration kept, Sapma 3): t 8.65  S 0.928  D2C +0.965  [+0.573, +1.540] -> gap: an information gap remains
+S2: t DOKUN 7.68  M2R 10.83   S DOKUN 1.000  M2R 0.778
+    D2 +3.148  percentile [+2.585, +3.840]  recentred [+2.582, +3.838]  pivot [+2.456, +3.711]
+    Outcome S2: gap: an information gap remains
+    M2C (weak calibration kept, Sapma 3): t 12.27  S 0.517  D2C +4.584  [+3.958, +5.228] -> gap: an information gap remains
+S3: t DOKUN 7.68  M2R 11.68   S DOKUN 1.000  M2R 0.686
+    D2 +3.995  percentile [+3.377, +4.690]  recentred [+3.370, +4.682]  pivot [+3.301, +4.614]
+    Outcome S3: gap: an information gap remains
+    M2C (weak calibration kept, Sapma 3): t 13.39  S 0.336  D2C +5.706  [+5.172, +6.229] -> gap: an information gap remains
+
+Combined (pre-registered reading):
+   gap at S1: a learned estimator against M2R in a separate protocol at S1; no world model
+
+D2 by cell (s), per level:      c = 5: e = 3    e = 6   e = 10    c = 2: e = 3    e = 6   e = 10
+   S1                          +0.000  +0.035  +0.662          +0.323  +2.805  +6.257
+   S2                          +0.000  +2.192  +4.164          +1.215  +4.214  +7.102
+   S3                          +0.044  +4.121  +5.650          +1.911  +4.874  +7.371
+   S1 by delay: 20 ms +1.236  65 ms +1.555  130 ms +2.249
+   S2 by delay: 20 ms +3.064  65 ms +2.888  130 ms +3.492
+   S3 by delay: 20 ms +4.133  65 ms +3.747  130 ms +4.106
+
+model 0, e > 0 (descriptive): t of DOKUN / M2O / M2R / M2T and the split of the gap
+   S1: DOKUN 7.71 (1.000)  M2O 7.81 (0.999)  M2R 9.34 (0.931)  M2T 8.94 (0.931)   rule M2O-DOKUN +0.095  sensor M2R-M2O +1.531  transfer M2T-M2R -0.401
+   S2: DOKUN 7.71 (1.000)  M2O 8.81 (0.926)  M2R 10.78 (0.788)  M2T 11.23 (0.757)   rule M2O-DOKUN +1.102  sensor M2R-M2O +1.970  transfer M2T-M2R +0.447
+   S3: DOKUN 7.71 (1.000)  M2O 7.95 (0.986)  M2R 11.68 (0.688)  M2T 11.03 (0.829)   rule M2O-DOKUN +0.239  sensor M2R-M2O +3.731  transfer M2T-M2R -0.652
+   S0 (ideal, new seeds): M2 7.92  DOKUN 7.71  D2 +0.206
+
+M2R first measurement and estimates (e > 0, all models; medians over runs with a measurement):
+   S1: | |r-hat| - |r| | 1.76 mm, direction error 12.6 deg (90% 45.5), estimate error first / last 4.14 / 2.09 mm, aims 2.24, no direction 0.011, measured 0.833
+   S2: | |r-hat| - |r| | 8.28 mm, direction error 48.9 deg (90% 148.5), estimate error first / last 5.64 / 5.09 mm, aims 2.44, no direction 0.041, measured 0.833
+   S3: | |r-hat| - |r| | 51.87 mm, direction error 79.0 deg (90% 163.8), estimate error first / last 7.16 / 7.46 mm, aims 2.90, no direction 0.000, measured 0.835
+
+e = 0, model 0 (false triggers): M2R t and trigger share
+   S1: t 7.48, triggered 0.000
+   S2: t 7.48, triggered 0.000
+   S3: t 7.48, triggered 0.010
+
+pilot values: F_t [5.0, 5.0, 5.0], n_w [5, 5, 5], R_MIN [0.001, 0.004, 0.002], cal [[[nan, nan], [nan, nan]], [[nan, nan], [nan, nan]], [[nan, nan], [nan, nan]]]

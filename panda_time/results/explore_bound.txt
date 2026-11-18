@@ -1,0 +1,25 @@
+EXPLORATORY. A, model 0, e > 0, both c (protocol time):
+   t: KAHIN 6.21  DOKUN-KAHIN 6.85  MOMENT 7.38   S: KAHIN 0.940  DOKUN 0.900  MOMENT 0.885
+   D_A model 0 = MOMENT - KAHIN     +1.168  [+0.988, +1.361]
+   unreachable = DOKUN - KAHIN      +0.639  [+0.475, +0.813]
+   reachable = MOMENT - DOKUN       +0.529  [+0.366, +0.674]
+   c = 5 mm, e =  3 mm: KAHIN 6.13  DOKUN 6.21  MOMENT 6.21   reachable +0.00
+   c = 5 mm, e =  6 mm: KAHIN 6.11  DOKUN 6.55  MOMENT 6.70   reachable +0.15
+   c = 5 mm, e = 10 mm: KAHIN 6.05  DOKUN 6.80  MOMENT 7.19   reachable +0.39
+   c = 2 mm, e =  3 mm: KAHIN 6.36  DOKUN 7.06  MOMENT 6.96   reachable -0.11
+   c = 2 mm, e =  6 mm: KAHIN 6.35  DOKUN 7.13  MOMENT 7.40   reachable +0.27
+   c = 2 mm, e = 10 mm: KAHIN 6.28  DOKUN 7.36  MOMENT 9.83   reachable +2.47
+   h + tau = 20 ms: reachable +0.59  unreachable +0.29
+   h + tau = 65 ms: reachable +0.65  unreachable +0.37
+   h + tau = 130 ms: reachable +0.35  unreachable +1.25
+
+EXPLORATORY. B, model 0, seeds 200-204 (protocol time):
+   t: KAHIN 6.23  SABIT-KAHIN 6.29  HAFIZA 6.73
+   D_B these seeds = HAFIZA - KAHIN +0.495  [+0.370, +0.644]
+   unreachable = SABIT - KAHIN      +0.060  [+0.002, +0.123]
+   reachable = HAFIZA - SABIT       +0.435  [+0.326, +0.551]
+   by trial: 1: K 6.25 S 6.34 H 7.46  2: K 6.45 S 6.50 H 6.94  3: K 6.18 S 6.26 H 6.47  4: K 6.08 S 6.09 H 6.36  5: K 6.19 S 6.26 H 6.40
+   c = 5 mm: KAHIN 6.14  SABIT 6.15  HAFIZA 6.30
+   c = 2 mm: KAHIN 6.32  SABIT 6.44  HAFIZA 7.15
+   reachable by a between-trial learner (trials 2-5, in D_B units) +0.212  [+0.129, +0.343]
+   trial 1 (no data yet, out of reach), in D_B units         +0.223  [+0.135, +0.280]

@@ -1,0 +1,78 @@
+== paper landing height above rim (mm) vs failure, runs with lateral >5 mm at landing vs <=5
+  z [-40,-5) lat>5: n 15  fail none 1.000 .01 1.000 .02 1.000 .04 1.000 .08 1.000  share of KAPI0 fails 0.015
+  z [-40,-5) lat<=5: n 40  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [-5,0) lat>5: n 345  fail none 1.000 .01 0.965 .02 1.000 .04 1.000 .08 1.000  share of KAPI0 fails 0.349
+  z [-5,0) lat<=5: n 32  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [0,2) lat>5: n 381  fail none 0.997 .01 0.803 .02 0.976 .04 0.976 .08 0.984  share of KAPI0 fails 0.376
+  z [0,2) lat<=5: n 2  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [2,4) lat>5: n 198  fail none 0.919 .01 0.520 .02 0.682 .04 0.687 .08 0.737  share of KAPI0 fails 0.137
+  z [2,4) lat<=5: n 26  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [4,6) lat>5: n 243  fail none 0.675 .01 0.115 .02 0.362 .04 0.387 .08 0.481  share of KAPI0 fails 0.089
+  z [4,6) lat<=5: n 42  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [6,8) lat>5: n 265  fail none 0.611 .01 0.004 .02 0.128 .04 0.132 .08 0.351  share of KAPI0 fails 0.034
+  z [6,8) lat<=5: n 2  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [8,10) lat>5: n 323  fail none 0.505 .01 0.000 .02 0.000 .04 0.000 .08 0.046  share of KAPI0 fails 0.000
+  z [8,10) lat<=5: n 1  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [10,15) lat>5: n 1118  fail none 0.338 .01 0.000 .02 0.000 .04 0.011 .08 0.067  share of KAPI0 fails 0.000
+  z [10,15) lat<=5: n 36  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [15,20) lat>5: n 1327  fail none 0.275 .01 0.000 .02 0.000 .04 0.003 .08 0.064  share of KAPI0 fails 0.000
+  z [20,80) lat>5: n 9746  fail none 0.050 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [20,80) lat<=5: n 258  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+ KAPI0 fail rate by h+tau among z in [0,8) lat>5:
+   0.020 n 91 fail 0.220
+   0.040 n 92 fail 0.413
+   0.045 n 92 fail 0.359
+   0.060 n 93 fail 0.419
+   0.065 n 92 fail 0.457
+   0.070 n 90 fail 0.578
+   0.080 n 91 fail 0.560
+   0.090 n 87 fail 0.759
+   0.095 n 91 fail 0.648
+   0.110 n 89 fail 0.764
+   0.115 n 91 fail 0.846
+   0.130 n 88 fail 0.955
+== analytic landing height above rim (mm) vs failure, runs with lateral >5 mm at landing vs <=5
+  z [-40,-5) lat>5: n 3  fail none 1.000 .01 1.000 .02 1.000 .04 1.000 .08 1.000  share of KAPI0 fails 0.009
+  z [-40,-5) lat<=5: n 13  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [-5,0) lat>5: n 119  fail none 1.000 .01 1.000 .02 1.000 .04 1.000 .08 1.000  share of KAPI0 fails 0.360
+  z [-5,0) lat<=5: n 11  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [0,2) lat>5: n 128  fail none 1.000 .01 0.992 .02 0.992 .04 0.992 .08 1.000  share of KAPI0 fails 0.384
+  z [2,4) lat>5: n 68  fail none 0.912 .01 0.632 .02 0.632 .04 0.632 .08 0.706  share of KAPI0 fails 0.130
+  z [2,4) lat<=5: n 12  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [4,6) lat>5: n 70  fail none 0.757 .01 0.429 .02 0.443 .04 0.443 .08 0.543  share of KAPI0 fails 0.094
+  z [4,6) lat<=5: n 12  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [6,8) lat>5: n 95  fail none 0.568 .01 0.021 .02 0.084 .04 0.084 .08 0.305  share of KAPI0 fails 0.024
+  z [8,10) lat>5: n 116  fail none 0.422 .01 0.000 .02 0.000 .04 0.000 .08 0.043  share of KAPI0 fails 0.000
+  z [10,15) lat>5: n 361  fail none 0.349 .01 0.000 .02 0.000 .04 0.011 .08 0.064  share of KAPI0 fails 0.000
+  z [10,15) lat<=5: n 12  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [15,20) lat>5: n 436  fail none 0.259 .01 0.000 .02 0.000 .04 0.002 .08 0.064  share of KAPI0 fails 0.000
+  z [20,80) lat>5: n 3260  fail none 0.052 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+  z [20,80) lat<=5: n 84  fail none 0.000 .01 0.000 .02 0.000 .04 0.000 .08 0.000  share of KAPI0 fails 0.000
+ KAPI0 fail rate by h+tau among z in [0,8) lat>5:
+   0.020 n 29 fail 0.241
+   0.040 n 30 fail 0.367
+   0.045 n 30 fail 0.400
+   0.060 n 29 fail 0.414
+   0.065 n 31 fail 0.452
+   0.070 n 29 fail 0.621
+   0.080 n 31 fail 0.548
+   0.090 n 31 fail 0.677
+   0.095 n 30 fail 0.667
+   0.110 n 31 fail 0.742
+   0.115 n 30 fail 0.833
+   0.130 n 30 fail 0.967
+arm 0 opt 0.01 rescued runs 630 with pre-gating 573 share 0.91 | kurals ok with pre-gating 3001
+arm 0 opt 0.02 rescued runs 543 with pre-gating 309 share 0.569 | kurals ok with pre-gating 1216
+arm 0 opt 0.04 rescued runs 535 with pre-gating 107 share 0.2 | kurals ok with pre-gating 249
+arm 1 opt 0.01 rescued runs 623 with pre-gating 571 share 0.917 | kurals ok with pre-gating 2912
+arm 1 opt 0.02 rescued runs 557 with pre-gating 321 share 0.576 | kurals ok with pre-gating 1423
+arm 1 opt 0.04 rescued runs 548 with pre-gating 95 share 0.173 | kurals ok with pre-gating 221
+arm 2 opt 0.01 rescued runs 605 with pre-gating 588 share 0.972 | kurals ok with pre-gating 3516
+arm 2 opt 0.02 rescued runs 555 with pre-gating 302 share 0.544 | kurals ok with pre-gating 932
+arm 2 opt 0.04 rescued runs 548 with pre-gating 97 share 0.177 | kurals ok with pre-gating 220
+arm 4 opt 0.01 rescued runs 554 with pre-gating 387 share 0.699 | kurals ok with pre-gating 1633
+arm 4 opt 0.02 rescued runs 547 with pre-gating 269 share 0.492 | kurals ok with pre-gating 771
+arm 4 opt 0.04 rescued runs 542 with pre-gating 98 share 0.181 | kurals ok with pre-gating 219
+total reruns 3717
+m0 share with d>.02 before t_d by T,gap [[0.083, 0.083], [0.567, 0.567]] by T,h+tau index h [[0.0, 0.067, 0.0, 0.267], [0.067, 0.333, 0.867, 1.0]]
+analytic share with d>.02 before t_d by T,gap [[0.0, 0.0], [0.433, 0.433]] by T,h+tau index h [[0.0, 0.0, 0.0, 0.0], [0.0, 0.067, 0.667, 1.0]]

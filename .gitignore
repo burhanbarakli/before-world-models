@@ -1,0 +1,7 @@
+.pbenv/
+.claude/
+__pycache__/
+*.pyc
+.DS_Store
+*.partial.pkl
+*.tmp

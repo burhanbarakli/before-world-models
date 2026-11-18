@@ -1,0 +1,20 @@
+M1 regression, 40 runs: worst |lat diff| 0.027 mm, |end_z diff| 0.008 mm -> pass
+M2 passable, 25 runs: TABAN SR 1.00 -> pass
+M3 wall, 50 runs: held 1.00, deepest end_z 0.2503 -> pass
+   M3 T=4.0: f_max mean 47.0 max 49.1, pressing force mean 23.0
+   M3 T=8.0: f_max mean 21.8 max 24.0, pressing force mean 14.5
+M4 contact: largest filtered force 49.1 N (F_max 50.0), sustained oscillation 0.08 -> FAIL
+M5 half step: SR diff 0.00, wall diff 0.00, mean f_max 22.9 vs 21.8 (5%) -> pass
+   seconds per run: 2.69 at 1000 Hz, 5.06 at 2000 Hz
+REFLEKS tuning, e in {3, 6} mm, c = 5, T = 8, h = 20, analytic, 200 runs per setting: SR, mean t_in
+   F_t  3.0  v_s 0.01: SR 0.950  t_in 8.27
+   F_t  3.0  v_s 0.02: SR 0.925  t_in 8.27
+   F_t  3.0  v_s 0.04: SR 0.870  t_in 8.68
+   F_t  5.0  v_s 0.01: SR 0.950  t_in 8.27
+   F_t  5.0  v_s 0.02: SR 0.925  t_in 8.28
+   F_t  5.0  v_s 0.04: SR 0.870  t_in 8.68
+   F_t  8.0  v_s 0.01: SR 0.950  t_in 8.27
+   F_t  8.0  v_s 0.02: SR 0.925  t_in 8.27
+   F_t  8.0  v_s 0.04: SR 0.870  t_in 8.69
+   chosen: F_t 5.0, v_s 0.01 (highest SR, ties to the protocol default, then faster)
+M6 time: 6.58 s per run (8 jobs, 77 s wall), 105600 runs -> about 21.4 h on 9 processes -> FAIL

@@ -1,0 +1,11 @@
+axes (3, 4, 3, 2, 10, 5, 20) point [0.0833 0.0483 0.0147]
+orig         mean [0.0832 0.0581 0.0104] lo [ 0.0642  0.0258 -0.0047] hi [0.1    0.0961 0.0236]  shift-corrected hi [0.1002 0.0864 0.0279] lo [ 0.0643  0.0161 -0.0005]
+sel_fixed    mean [0.0834 0.0547 0.0139] lo [0.0669 0.0275 0.0036] hi [0.0997 0.0956 0.0244]  shift-corrected hi [0.0997 0.0892 0.0253] lo [0.0669 0.0211 0.0045]
+holes_fixed  mean [0.0834 0.0512 0.014 ] lo [0.0739 0.0339 0.0072] hi [0.092  0.0864 0.0203]  shift-corrected hi [0.0919 0.0836 0.021 ] lo [0.0738 0.0311 0.0079]
+random splits mean [0.0726 0.0524 0.0173] q2.5 [0.0642 0.0442 0.0133] q97.5 [0.0808 0.0608 0.0214]
+without hole 0: RULE 0.857 FIX8 0.772 FIXS 0.811 TABLE 0.871 M 0.014
+without hole 1: RULE 0.836 FIX8 0.753 FIXS 0.789 TABLE 0.854 M 0.018
+without hole 2: RULE 0.843 FIX8 0.764 FIXS 0.796 TABLE 0.858 M 0.015
+without hole 3: RULE 0.866 FIX8 0.784 FIXS 0.819 TABLE 0.877 M 0.011
+without hole 4: RULE 0.846 FIX8 0.759 FIXS 0.791 TABLE 0.859 M 0.014
+per hole RULE [0.821 0.904 0.875 0.783 0.865] FIX8 [0.743 0.819 0.778 0.696 0.796]

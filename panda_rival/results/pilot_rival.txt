@@ -1,0 +1,28 @@
+P1 c = 5 mm, 75 of 100 with a measurement: d = 15.31 mm + -0.975 |r|, R2 0.97, median error 0.20 mm -> fixed step c
+   median |r| by e (mm): e 6: |r| 9.6  e 8: |r| 7.4  e 10: |r| 5.6
+P1 c = 2 mm, 100 of 100 with a measurement: d = 13.60 mm + -1.223 |r|, R2 0.94, median error 0.39 mm -> fixed step c
+   median |r| by e (mm): e 4: |r| 8.0  e 6: |r| 5.9  e 8: |r| 4.5  e 10: |r| 3.3
+P2 regression, 20 runs: worst |end_z diff| 0.000 mm, same outcome True -> pass
+   h + tau 20 ms, v_s 5 mm/s, n_w  5: t 9.08  SR 0.920
+   h + tau 20 ms, v_s 5 mm/s, n_w 10: t 9.13  SR 0.920
+   h + tau 20 ms, v_s 10 mm/s, n_w  5: t 8.82  SR 0.945
+   h + tau 20 ms, v_s 10 mm/s, n_w 10: t 8.90  SR 0.940
+   h + tau 20 ms, v_s 20 mm/s, n_w  5: t 8.92  SR 0.912
+   h + tau 20 ms, v_s 20 mm/s, n_w 10: t 8.96  SR 0.913
+P3 h + tau 20 ms chosen: v_s 10 mm/s, n_w 5
+   h + tau 65 ms, v_s 5 mm/s, n_w  5: t 9.94  SR 0.857
+   h + tau 65 ms, v_s 5 mm/s, n_w 10: t 9.99  SR 0.855
+   h + tau 65 ms, v_s 10 mm/s, n_w  5: t 9.47  SR 0.922
+   h + tau 65 ms, v_s 10 mm/s, n_w 10: t 9.53  SR 0.925
+   h + tau 65 ms, v_s 20 mm/s, n_w  5: t 9.62  SR 0.857
+   h + tau 65 ms, v_s 20 mm/s, n_w 10: t 9.65  SR 0.863
+P3 h + tau 65 ms chosen: v_s 10 mm/s, n_w 5
+   h + tau 130 ms, v_s 5 mm/s, n_w  5: t 10.48  SR 0.823
+   h + tau 130 ms, v_s 5 mm/s, n_w 10: t 10.50  SR 0.822
+   h + tau 130 ms, v_s 10 mm/s, n_w  5: t 10.07  SR 0.893
+   h + tau 130 ms, v_s 10 mm/s, n_w 10: t 10.12  SR 0.890
+   h + tau 130 ms, v_s 20 mm/s, n_w  5: t 11.31  SR 0.605
+   h + tau 130 ms, v_s 20 mm/s, n_w 10: t 11.23  SR 0.618
+P3 h + tau 130 ms chosen: v_s 10 mm/s, n_w 5
+P4 time: 5.42 s per run at T = 8, about 8.8 h on 9 processes -> pass
+chosen: V_S [0.01, 0.01, 0.01], N_W [5, 5, 5], CAL {0.005: None, 0.002: None}

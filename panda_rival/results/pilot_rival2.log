@@ -1,0 +1,35 @@
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+pybullet build time: Oct 21 2025 17:04:55
+P1 c = 5 mm, 75 with a measurement: d = 15.309 mm + -0.9747 |r|, R2 0.973, median error 0.20 mm -> calibration
+P1 c = 2 mm, 100 with a measurement: d = 13.596 mm + -1.2231 |r|, R2 0.944, median error 0.39 mm -> calibration
+   h + tau 20 ms, v_s 5 mm/s, n_w  5: t 8.12  SR 0.952
+   h + tau 20 ms, v_s 5 mm/s, n_w 10: t 8.13  SR 0.955
+   h + tau 20 ms, v_s 10 mm/s, n_w  5: t 8.10  SR 0.958
+   h + tau 20 ms, v_s 10 mm/s, n_w 10: t 8.11  SR 0.958
+   h + tau 20 ms, v_s 20 mm/s, n_w  5: t 8.09  SR 0.958
+   h + tau 20 ms, v_s 20 mm/s, n_w 10: t 8.13  SR 0.957
+P3 h + tau 20 ms chosen: v_s 10 mm/s, n_w 5
+   h + tau 65 ms, v_s 5 mm/s, n_w  5: t 8.41  SR 0.933
+   h + tau 65 ms, v_s 5 mm/s, n_w 10: t 8.43  SR 0.935
+   h + tau 65 ms, v_s 10 mm/s, n_w  5: t 8.39  SR 0.938
+   h + tau 65 ms, v_s 10 mm/s, n_w 10: t 8.42  SR 0.940
+   h + tau 65 ms, v_s 20 mm/s, n_w  5: t 8.39  SR 0.938
+   h + tau 65 ms, v_s 20 mm/s, n_w 10: t 8.41  SR 0.940
+P3 h + tau 65 ms chosen: v_s 10 mm/s, n_w 5
+   h + tau 130 ms, v_s 5 mm/s, n_w  5: t 8.83  SR 0.928
+   h + tau 130 ms, v_s 5 mm/s, n_w 10: t 8.88  SR 0.928
+   h + tau 130 ms, v_s 10 mm/s, n_w  5: t 8.82  SR 0.933
+   h + tau 130 ms, v_s 10 mm/s, n_w 10: t 8.88  SR 0.930
+   h + tau 130 ms, v_s 20 mm/s, n_w  5: t 9.00  SR 0.903
+   h + tau 130 ms, v_s 20 mm/s, n_w 10: t 9.00  SR 0.910
+P3 h + tau 130 ms chosen: v_s 5 mm/s, n_w 5
+P4 time: 4.39 s per run at T = 8
+chosen: V_S [0.01, 0.01, 0.005], N_W [5, 5, 5], CAL {0.005: (0.015308598436978994, -0.9746718485308907), 0.002: (0.013595577174897837, -1.2231190241407184)}

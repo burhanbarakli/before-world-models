@@ -1,0 +1,32 @@
+=== MOMENT-2 against DOKUN-KAHIN, models 0-2, e > 0, both clearances (primary) ===
+t: DOKUN 6.40  MOMENT-2 6.65   S: DOKUN 0.948  MOMENT-2 0.932
+D2 = t(MOMENT-2) - t(DOKUN), s   +0.247  percentile [+0.182, +0.317]  recentred [+0.183, +0.318]  pivot [+0.176, +0.311]
+Outcome: the hand-made rival suffices; no model for position estimation during contact
+as registered, MOMENT-2F (fixed step c, Sapma 1): t 7.72  S 0.909  D2F +1.317  percentile [+1.211, +1.421]
+Outcome as registered: an information gap remains: a learned estimator in a separate protocol, rival MOMENT-2
+
+D2 by cell (s):        e = 3    e = 6    e = 10       D2F: e = 3    e = 6    e = 10
+   c = 5 mm          +0.015  +0.055  +0.088          +0.020  +0.059  +0.285
+   c = 2 mm          +0.210  +0.101  +1.010          +0.424  +2.286  +4.828
+   h + tau = 20 ms: D2 +0.138
+   h + tau = 65 ms: D2 +0.188
+   h + tau = 130 ms: D2 +0.414
+   no disturbance: D2 +0.238
+   push 0.25 s: D2 +0.255
+
+model 0, e > 0 (descriptive): KAHIN t 6.12 S 0.950  DOKUN t 6.41 S 0.948  MOMENT2 t 6.64 S 0.933  MOMENT t 7.26 S 0.902
+   improvement t(MOMENT) - t(MOMENT-2) +0.620   out of reach t(DOKUN) - t(KAHIN) +0.297   MOMENT-2 - DOKUN +0.230
+MOMENT-2 aims (mean) and estimate error first / last, mm (median, runs with an estimate):
+   e =  3 mm, c = 5 mm: aims 0.07    5.30 /  2.28   share 0.04
+   e =  3 mm, c = 2 mm: aims 1.73    0.52 /  0.57   share 0.96
+   e =  6 mm, c = 5 mm: aims 1.18    0.25 /  0.25   share 0.93
+   e =  6 mm, c = 2 mm: aims 1.33    0.83 /  0.80   share 0.99
+   e = 10 mm, c = 5 mm: aims 1.30    1.01 /  0.98   share 0.99
+   e = 10 mm, c = 2 mm: aims 1.71    2.20 /  0.96   share 0.89
+e = 0, model 0, c = 5 mm: t MOMENT-2 6.134 vs KAHIN at e = 3 6.101: false trigger cost +0.033
+e = 0, model 0, c = 2 mm: t MOMENT-2 6.277 vs KAHIN at e = 3 6.244: false trigger cost +0.033
+   mu low third: D2 +0.228
+   mu mid third: D2 +0.238
+   mu high third: D2 +0.273
+   first |r| < R_MIN = 2 mm (straight to spiral): share 0.021, contributes +0.112 s of D2
+   aims = 4 (re-aims exhausted): share 0.059, contributes +0.055 s of D2

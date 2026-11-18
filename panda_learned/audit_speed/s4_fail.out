@@ -1,0 +1,57 @@
+===== paper
+frac runs success under k options k=0..5 all seeds: [0.0546 0.0141 0.0017 0.0177 0.0956 0.8164]
+test:  [3.040e-02 1.000e-02 4.000e-04 1.400e-02 9.040e-02 8.547e-01]
+sel:  [0.0788 0.0182 0.0029 0.0214 0.1007 0.7781]
+ opt none: fail 0.1836; shallow 0.0000, lat>5mm 0.1836; shallow&fail-only-shallow 0.0000
+ opt 0.01: fail 0.0546; shallow 0.0000, lat>5mm 0.0546; shallow&fail-only-shallow 0.0000
+ opt 0.02: fail 0.0687; shallow 0.0000, lat>5mm 0.0687; shallow&fail-only-shallow 0.0000
+ opt 0.04: fail 0.0703; shallow 0.0000, lat>5mm 0.0703; shallow&fail-only-shallow 0.0000
+ opt 0.08: fail 0.0881; shallow 0.0000, lat>5mm 0.0881; shallow&fail-only-shallow 0.0000
+ all-option failures: T [0.1092 0.    ] gap [0.0007 0.1085]
+ by T,gap: [[0.0014, 0.2169], [0.0, 0.0]]
+ by h [0.05   0.0572 0.0589 0.0522] tau [0.055  0.0548 0.054 ]
+ by hole [0.0688 0.0712 0.0226 0.0497 0.0608]
+ by seed [0.125 0.049 0.046 0.096 0.081 0.125 0.094 0.071 0.057 0.044 0.047 0.05
+ 0.05  0.014 0.    0.    0.096 0.047 0.    0.   ]
+ by model [0.0492 0.0558 0.0588]
+ distinct disturbance instances (T,gap,hole,seed)= 400  with any fail 28  with all cells failing 2 >0.5: 23
+ share of all-fail mass from instances>0.5: 0.9389312977099236
+ instances>0.5 (T,gap,hole,seed,rate): [(8.0, 0.25, np.int64(0), np.int64(0), 0.97), (8.0, 0.25, np.int64(0), np.int64(5), 0.92), (8.0, 0.25, np.int64(0), np.int64(6), 0.67), (8.0, 0.25, np.int64(0), np.int64(7), 0.97), (8.0, 0.25, np.int64(0), np.int64(11), 1.0), (8.0, 0.25, np.int64(0), np.int64(16), 0.97), (8.0, 0.25, np.int64(1), np.int64(1), 0.97), (8.0, 0.25, np.int64(1), np.int64(2), 0.92), (8.0, 0.25, np.int64(1), np.int64(3), 0.97), (8.0, 0.25, np.int64(1), np.int64(5), 0.94), (8.0, 0.25, np.int64(1), np.int64(9), 0.89), (8.0, 0.25, np.int64(1), np.int64(16), 0.94), (8.0, 0.25, np.int64(2), np.int64(3), 0.94), (8.0, 0.25, np.int64(3), np.int64(0), 0.56), (8.0, 0.25, np.int64(3), np.int64(4), 0.89), (8.0, 0.25, np.int64(3), np.int64(5), 0.64), (8.0, 0.25, np.int64(3), np.int64(10), 0.94), (8.0, 0.25, np.int64(3), np.int64(12), 0.94), (8.0, 0.25, np.int64(4), np.int64(0), 0.97), (8.0, 0.25, np.int64(4), np.int64(4), 0.72), (8.0, 0.25, np.int64(4), np.int64(6), 0.81), (8.0, 0.25, np.int64(4), np.int64(8), 1.0), (8.0, 0.25, np.int64(4), np.int64(17), 0.94)]
+===== analytic
+frac runs success under k options k=0..5 all seeds: [0.0675 0.0015 0.001  0.0177 0.0952 0.8171]
+test:  [4.000e-02 8.000e-04 0.000e+00 1.460e-02 8.880e-02 8.558e-01]
+sel:  [0.095  0.0021 0.0021 0.0208 0.1017 0.7783]
+ opt none: fail 0.1829; shallow 0.0000, lat>5mm 0.1829; shallow&fail-only-shallow 0.0000
+ opt 0.01: fail 0.0675; shallow 0.0000, lat>5mm 0.0675; shallow&fail-only-shallow 0.0000
+ opt 0.02: fail 0.0690; shallow 0.0000, lat>5mm 0.0690; shallow&fail-only-shallow 0.0000
+ opt 0.04: fail 0.0700; shallow 0.0000, lat>5mm 0.0700; shallow&fail-only-shallow 0.0000
+ opt 0.08: fail 0.0877; shallow 0.0000, lat>5mm 0.0877; shallow&fail-only-shallow 0.0000
+ all-option failures: T [0.135 0.   ] gap [0.0058 0.1292]
+ by T,gap: [[0.0117, 0.2583], [0.0, 0.0]]
+ by h [0.0542 0.0608 0.075  0.08  ] tau [0.0631 0.0688 0.0706]
+ by hole [0.074  0.0792 0.0552 0.05   0.0792]
+ by seed [0.138 0.05  0.05  0.125 0.096 0.129 0.138 0.1   0.075 0.05  0.046 0.054
+ 0.067 0.033 0.    0.    0.1   0.05  0.029 0.021]
+ by model [0.0675]
+ distinct disturbance instances (T,gap,hole,seed)= 400  with any fail 34  with all cells failing 20 >0.5: 27
+ share of all-fail mass from instances>0.5: 0.9259259259259259
+ instances>0.5 (T,gap,hole,seed,rate): [(8.0, 0.25, np.int64(0), np.int64(0), 1.0), (8.0, 0.25, np.int64(0), np.int64(5), 1.0), (8.0, 0.25, np.int64(0), np.int64(6), 0.75), (8.0, 0.25, np.int64(0), np.int64(7), 1.0), (8.0, 0.25, np.int64(0), np.int64(11), 1.0), (8.0, 0.25, np.int64(0), np.int64(16), 1.0), (8.0, 0.25, np.int64(1), np.int64(1), 1.0), (8.0, 0.25, np.int64(1), np.int64(2), 1.0), (8.0, 0.25, np.int64(1), np.int64(3), 1.0), (8.0, 0.25, np.int64(1), np.int64(5), 1.0), (8.0, 0.25, np.int64(1), np.int64(9), 1.0), (8.0, 0.25, np.int64(1), np.int64(16), 1.0), (8.0, 0.25, np.int64(2), np.int64(3), 1.0), (8.0, 0.25, np.int64(2), np.int64(6), 1.0), (8.0, 0.25, np.int64(2), np.int64(7), 1.0), (8.0, 0.25, np.int64(2), np.int64(18), 0.58), (8.0, 0.25, np.int64(3), np.int64(0), 0.58), (8.0, 0.25, np.int64(3), np.int64(4), 0.92), (8.0, 0.25, np.int64(3), np.int64(5), 0.58), (8.0, 0.25, np.int64(3), np.int64(10), 0.92), (8.0, 0.25, np.int64(3), np.int64(12), 1.0), (8.0, 0.25, np.int64(4), np.int64(0), 1.0), (8.0, 0.25, np.int64(4), np.int64(4), 1.0), (8.0, 0.25, np.int64(4), np.int64(6), 1.0), (8.0, 0.25, np.int64(4), np.int64(8), 1.0), (8.0, 0.25, np.int64(4), np.int64(13), 0.67), (8.0, 0.25, np.int64(4), np.int64(17), 1.0)]
+===== weak
+frac runs success under k options k=0..5 all seeds: [0.0569 0.016  0.0065 0.0198 0.1231 0.7777]
+test:  [0.0417 0.0054 0.0058 0.015  0.1192 0.8129]
+sel:  [0.0721 0.0267 0.0071 0.0246 0.1271 0.7425]
+ opt none: fail 0.1921; shallow 0.0167, lat>5mm 0.1754; shallow&fail-only-shallow 0.0167
+ opt 0.01: fail 0.0871; shallow 0.0469, lat>5mm 0.0402; shallow&fail-only-shallow 0.0469
+ opt 0.02: fail 0.0729; shallow 0.0167, lat>5mm 0.0563; shallow&fail-only-shallow 0.0167
+ opt 0.04: fail 0.0794; shallow 0.0167, lat>5mm 0.0627; shallow&fail-only-shallow 0.0167
+ opt 0.08: fail 0.0992; shallow 0.0167, lat>5mm 0.0825; shallow&fail-only-shallow 0.0167
+ all-option failures: T [0.1138 0.    ] gap [0.0171 0.0967]
+ by T,gap: [[0.0342, 0.1933], [0.0, 0.0]]
+ by h [0.095  0.0492 0.0467 0.0367] tau [0.0881 0.0412 0.0412]
+ by hole [0.1073 0.0396 0.     0.0406 0.0969]
+ by seed [0.133 0.054 0.038 0.046 0.088 0.117 0.088 0.062 0.067 0.029 0.054 0.062
+ 0.054 0.029 0.017 0.017 0.092 0.058 0.017 0.017]
+ by model [0.0569]
+ distinct disturbance instances (T,gap,hole,seed)= 400  with any fail 91  with all cells failing 7 >0.5: 18
+ share of all-fail mass from instances>0.5: 0.6593406593406594
+ instances>0.5 (T,gap,hole,seed,rate): [(8.0, 0.25, np.int64(0), np.int64(0), 1.0), (8.0, 0.25, np.int64(0), np.int64(5), 1.0), (8.0, 0.25, np.int64(0), np.int64(6), 0.75), (8.0, 0.25, np.int64(0), np.int64(7), 1.0), (8.0, 0.25, np.int64(0), np.int64(11), 1.0), (8.0, 0.25, np.int64(0), np.int64(16), 1.0), (8.0, 0.25, np.int64(1), np.int64(1), 0.75), (8.0, 0.25, np.int64(1), np.int64(3), 0.58), (8.0, 0.25, np.int64(1), np.int64(5), 0.58), (8.0, 0.25, np.int64(1), np.int64(16), 0.58), (8.0, 0.25, np.int64(3), np.int64(4), 0.75), (8.0, 0.25, np.int64(3), np.int64(10), 0.75), (8.0, 0.25, np.int64(3), np.int64(12), 0.75), (8.0, 0.25, np.int64(4), np.int64(0), 1.0), (8.0, 0.25, np.int64(4), np.int64(4), 0.75), (8.0, 0.25, np.int64(4), np.int64(6), 0.83), (8.0, 0.25, np.int64(4), np.int64(8), 1.0), (8.0, 0.25, np.int64(4), np.int64(17), 0.92)]

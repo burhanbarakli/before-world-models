@@ -1,0 +1,14 @@
+gate_rule (3, 4, 3, 2, 10, 5, 20, 5) ['lat', 'tilt', 'end_z', 'end_p', 'end_r']
+analytic no-gate == gate_rule rule arm, T=8,4, h=70,90: True
+runs failing at every eta 0.1462 rescued any gate 0.5385 KAPI0 0.5285
+  those failures: lost-type? see s6b. by T,gap [[0.072, 0.335], [0.0, 0.178]]
+t_rim(model)-t_rim(analytic): mean -0.051 min -0.28000000000000025 max 0.25
+T 8.0 z min before via 0.3702526184405322 first band idx t 4.362666666666667 t rim ref 6.085333333333333 descent speed at rim mm/s 56.65010509978488 at via 78.1234555402438 xy drift in band mm 0.0 vmax 2.48106610057876
+   ref height at rim-gap mm 23.94562418169738
+   ref height at rim-gap mm 14.562004170253328
+T 4.0 z min before via 0.3702526184405322 first band idx t 2.1813333333333333 t rim ref 3.0426666666666664 descent speed at rim mm/s 113.30021019956976 at via 156.2469110804876 xy drift in band mm 0.0 vmax 4.96213220115752
+   ref height at rim-gap mm 50.84058796594887
+   ref height at rim-gap mm 30.528468996785406
+first-draw disturbance: |v| mm mean 19.469223481340112 max 19.986422121650666 |w| rad mean 0.02553944466865098
+distinct T,hole,seed disturbances 200 ; test half: 100
+mean downward jump (v_z, body z=down) sel 1.7038614078404455 test -0.7192100849910819

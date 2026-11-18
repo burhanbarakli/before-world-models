@@ -1,0 +1,45 @@
+
+=== c=5 mm (primary) ===
+test half: S(RULE) 0.850  S(FIX8) 0.766  S(FIXS) 0.801  S(TABLE) 0.864  S(ORACLE) 0.870  (SABIT* eta 6.5)
+KURAL-SABIT8 0.083  KURAL-SABIT* 0.048  M 0.015
+halves swapped: M 0.017, KURAL-SABIT8 0.062
+95%: KURAL-SABIT8 [0.067, 0.101]  KURAL-SABIT* [0.027, 0.096]  M [-0.006, 0.023]
+G PASS  B PASS  U 0.023
+Outcome: rule confirmed; no eta-selecting model needed on this task
+
+Slices, c=5 mm, test half:        KURAL  SABIT8  TABLO
+  T=8.0                        0.832  0.763   0.846
+  T=6.0                        0.834  0.742   0.841
+  T=4.0                        0.883  0.794   0.907
+  gap=0.4                      0.969  0.899   0.977
+  gap=0.25                     0.730  0.633   0.752
+  h+tau in [0, 0.05)           0.953  0.907   0.950
+  h+tau in [0.05, 0.09)        0.897  0.873   0.913
+  h+tau in [0.09, 0.2)         0.750  0.597   0.774
+
+TABLO eta by (h, tau), rule value after the slash
+  T=8.0
+    h= 15: 20/20.0  10/15.0  16/10.9
+    h= 35: 10/17.1  12/10.0  10/8.0
+    h= 70: 10/8.6  8/6.3  6.5/5.5
+    h= 90: 8/6.7  6.5/5.2  5/4.6
+  T=6.0
+    h= 15: 20/20.0  20/15.0  12/10.9
+    h= 35: 16/17.1  12/10.0  10/8.0
+    h= 70: 10/8.6  8/6.3  6.5/5.5
+    h= 90: 8/6.7  6.5/5.2  6.5/4.6
+  T=4.0
+    h= 15: 8/20.0  10/15.0  10/10.9
+    h= 35: 10/17.1  12/10.0  10/8.0
+    h= 70: 10/8.6  8/6.3  6.5/5.5
+    h= 90: 8/6.7  6.5/5.2  5/4.6
+
+=== c=2 mm (secondary) ===
+test half: S(RULE) 0.687  S(FIX8) 0.550  S(FIXS) 0.550  S(TABLE) 0.719  S(ORACLE) 0.723  (SABIT* eta 8)
+KURAL-SABIT8 0.137  KURAL-SABIT* 0.137  M 0.032
+halves swapped: M 0.022, KURAL-SABIT8 0.145
+
+=== c=10 mm (secondary) ===
+test half: S(RULE) 0.932  S(FIX8) 0.940  S(FIXS) 0.940  S(TABLE) 0.948  S(ORACLE) 0.952  (SABIT* eta 8)
+KURAL-SABIT8 -0.008  KURAL-SABIT* -0.008  M 0.016
+halves swapped: M 0.020, KURAL-SABIT8 -0.014
